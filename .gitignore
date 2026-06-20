@@ -1,0 +1,15 @@
+# Compilados e Executáveis
+*.exe
+*.o
+*.obj
+*.out
+
+# Pastas de Build e Debug
+Debug/
+Release/
+
+# Configurações de IDEs (VS Code, etc)
+.vscode/
+
+# Arquivos temporários e de log
+*.log
