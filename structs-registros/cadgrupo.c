@@ -11,14 +11,17 @@ int main() {
         printf("Dados da pessoa:\n\n");
         printf("Digite o nome: ");
         fgets(p.nome, sizeof(p.nome), stdin);
-        size_t len = strlen(p.nome);
-        if (len > 0 && p.nome[len - 1] == '\n') {
-            p.nome[len - 1] = '\0';
+        fgets(parray[i].nome, sizeof(parray[i].nome), stdin);
+        size_t len = strlen(parray[i].nome);
+        if (len > 0 && parray[i].nome[len - 1] == '\n') {
+            parray[i].nome[len - 1] = '\0';
         }
         printf("Digite a idade: ");
-        scanf("%d", &p.idade);
+        scanf("%d", &parray[i].idade);
         printf("Digite a altura: ");
-        scanf("%f", &p.altura);
+        scanf("%f", &parray[i].altura);
+        //scanf("%f", &p.altura);
+         while (getchar() != '\n'); 
                
     }
     
